@@ -3,6 +3,9 @@ package com.example.footballinfo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +13,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        DatabaseHelper databaseHelper = new DatabaseHelper(this);
+        MatchInfo matchInfo = new MatchInfo(1,"Liverpool",
+                "Leicester",4,1);
+        databaseHelper.insert(matchInfo);
+        ArrayList<MatchInfo> list = databaseHelper.selectAll();
+        Log.d("","");
     }
 }
