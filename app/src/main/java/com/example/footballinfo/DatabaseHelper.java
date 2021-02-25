@@ -17,7 +17,7 @@ public class DatabaseHelper {
         private static final String COLUMN_TEAMHOME = "TeamНоme";
         private static final String COLUMN_TEAMGUEST = "TeamGuest";
         private static final String COLUMN_GOALSHOME = "GoalsHome";
-        private static final String COLUMN_GOALSGUEST = "GoalsGuast";
+        private static final String COLUMN_GOALSGUEST = "GoalsGuest";
 
         private static final int NUM_COLUMN_ID = 0;
         private static final int NUM_COLUMN_TEAMHOME = 1;
