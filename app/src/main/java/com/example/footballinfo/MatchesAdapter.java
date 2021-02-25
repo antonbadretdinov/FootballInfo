@@ -44,7 +44,10 @@ public class MatchesAdapter extends BaseAdapter {
         guestTeamName.setText(list.get(i).getTeamguest());
 
         TextView homeGoals = view.findViewById(R.id.homeGoals);
-        //homeGoals.setText(list.get(i).get);
+        homeGoals.setText(Integer.toString(list.get(i).getGoalshouse()));
+
+        TextView guestGoals = view.findViewById(R.id.guestGoals);
+        homeGoals.setText(Integer.toString(list.get(i).getGoalsguest()));
 
         return null;
     }
